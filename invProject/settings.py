@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import dj_database_url
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,12 @@ SECRET_KEY = 'django-insecure-aw1ga7$)o+8nar80bnu&o2rl2cvs4^0zo&m$ein$(aqxbia81r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'onrender.com',
+    'localhost',
+    '127.0.0.1',
+    os.getenv('RENDER_EXTERNAL_HOSTNAME', ''),  # This will automatically get the Render hostname
+]
 
 
 # Application definition
