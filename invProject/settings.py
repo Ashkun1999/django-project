@@ -84,14 +84,10 @@ WSGI_APPLICATION = 'invProject.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "djangodatabase_54me",
-        "USER": "djangodatabase_54me_user",
-        "PASSWORD": "JK4m6XQo3nBsooII5LxpXv6QsBkZnkXg",
-        "HOST": "dpg-ctc5sk8gph6c73acef90-a.oregon-postgres.render.com",
-        "PORT": "5432",
-    }
+    'default': dj_database_url.config(
+        default="postgresql://inventorydb_01ma_user:yoFaczLx44D2mK7uWcz4yxzC2DNZMTKj@dpg-cuov21dsvqrc73et04mg-a.oregon-postgres.render.com/inventorydb_01ma",
+        conn_max_age=600
+    )
 }
 
 
