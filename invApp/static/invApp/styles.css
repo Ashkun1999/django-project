@@ -19,3 +19,11 @@ body {
 .table td {
     vertical-align: middle;
 }
+
+.ml-auto {
+    margin-left: auto !important;
+}
+.auth-nav {
+    justify-content: flex-end;
+    width: 100%;
+}

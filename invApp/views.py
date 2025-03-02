@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 from .forms import ProductForm
@@ -11,6 +12,7 @@ def home_view(request):
     return render(request, 'invApp/home.html')
 
 # Create View
+@login_required
 def product_create_view(request):
     form = ProductForm()
     if request.method == 'POST':
@@ -26,6 +28,7 @@ def product_list_view(request):
     return render(request, 'invApp/product_list.html', {'products':products})
 
 # Update View
+@login_required
 def product_update_view(request, product_id):
     product = Product.objects.get(product_id=product_id)
     form = ProductForm()
@@ -37,6 +40,7 @@ def product_update_view(request, product_id):
     return render(request, 'invApp/product_form.html', {'form':form})
 
 # Delete View
+@login_required
 def product_delete_view(request, product_id):
     product = Product.objects.get(product_id = product_id)
     if request.method == 'POST':
