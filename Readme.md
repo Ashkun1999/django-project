@@ -3,6 +3,9 @@
 This is a Django project for managing inventory.
 
 Github Repo link [https://github.com/Ashkun1999/django-project](https://github.com/Ashkun1999/django-project) 
+Render Link: [https://django-project-4dod.onrender.com/](https://django-project-4dod.onrender.com/)
+
+Django Admin Link: [https://django-project-4dod.onrender.com/admin](https://django-project-4dod.onrender.com/admin)
 
 ## Getting Started
 
