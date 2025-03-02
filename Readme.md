@@ -6,6 +6,16 @@ Github Repo link [https://github.com/Ashkun1999/django-project](https://github.c
 Render Link: [https://django-project-4dod.onrender.com/](https://django-project-4dod.onrender.com/)
 
 Django Admin Link: [https://django-project-4dod.onrender.com/admin](https://django-project-4dod.onrender.com/admin)
+Admin Credentials:
+ - Username: admin
+ - Password: admin123
+
+# Built With
+* [Django](https://www.djangoproject.com/) - The web framework used
+* [Bootstrap](https://getbootstrap.com/) - For styling and responsive design
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - For better form rendering
+* [PostgreSQL](https://www.postgresql.org/) - Database used for production
+* [Render](https://render.com/) - For deployment
 
 ## Getting Started
 
