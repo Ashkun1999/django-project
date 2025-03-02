@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'invProject.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default="postgresql://inventorydb_01ma_user:yoFaczLx44D2mK7uWcz4yxzC2DNZMTKj@dpg-cuov21dsvqrc73et04mg-a.oregon-postgres.render.com/inventorydb_01ma",
+        default="postgresql://databaseinventory_user:E7ahdMuQF2MTMWpsSsWE1amHbofV0t62@dpg-cv28dsnnoe9s73aul9qg-a.oregon-postgres.render.com/databaseinventory",
         conn_max_age=600
     )
 }
